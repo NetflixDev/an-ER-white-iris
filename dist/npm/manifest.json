@@ -1,15 +1,17 @@
 {
-	"name": "Netflix Animation Component",
-	"type": "netflix-anim",
-	"tagName": "netflix-anim",
-	"version": "1.0.0",
-	"description": "Not intended for GWD, just satisfying rigid API requirements",
-	"files": {
-		"js": []
-	},
-	"externalScripts": [],
-	"attributes": [],
-	"events": [],
-	"methods": [],
-	"nestable": true
+  "name": "Netflix Animation Component",
+  "type": "netflix-anim",
+  "tagName": "netflix-anim",
+  "version": "1.0.0",
+  "description": "Not intended for GWD, just satisfying rigid API requirements",
+  "files": {
+    "js": [
+      "586328cd-b233-4e42-8cfa-2bc84180a86f.js"
+    ]
+  },
+  "externalScripts": [],
+  "attributes": [],
+  "events": [],
+  "methods": [],
+  "nestable": true
 }

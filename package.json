@@ -1,7 +1,7 @@
 {
-  "name": "@netflixadseng/an-ER-fade-in",
+  "name": "@netflixadseng/an-ER-private-life",
   "version": "5.0.0",
-  "description": "Netflix Animation: Endframe Fade-in",
+  "description": "Netflix Animation: Private Life",
   "scripts": {
     "init": "node lib/api.js --cmd install",
     "localhost": "sh lib/confirm_env.sh 'http-server ./ -p 8000'",
@@ -44,18 +44,18 @@
   "author": "Netflix",
   "license": "ISC",
   "genericSource": {
-    "id": "c64f2f0a-32dd-4379-9742-2fd3587f0255",
+    "id": "586328cd-b233-4e42-8cfa-2bc84180a86f",
     "compatibility": [
-      "8c417243-849b-4868-8eb9-91063e2f3d80"
+      "f1250f57-b03c-4651-8c79-2659145bf385"
     ],
-    "name": "an-ER-fade-in",
-    "description": "Half-second fade-in",
+    "name": "an-ER-private-life",
+    "description": "White iris wipe",
     "type": "animations",
     "context": "Default",
     "state": "published",
-    "updated": 1551293070825,
-    "full_name": "NetflixDev/an-ER-fade-in",
-    "html_url": "https://github.com/NetflixDev/an-ER-fade-in",
+    "updated": 1553799117797,
+    "full_name": "NetflixDev/an-ER-private-life",
+    "html_url": "https://github.com/NetflixDev/an-ER-private-life",
     "username": "GitHub",
     "version": "5.0.0",
     "minimum": "3.0.0"
