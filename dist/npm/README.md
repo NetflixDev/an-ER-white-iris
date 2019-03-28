@@ -1,3 +1,3 @@
-# Private Life Animation Preset
+# White Iris Animation Preset
 
 White iris reveals endframe
