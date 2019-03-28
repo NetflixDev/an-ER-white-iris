@@ -1,0 +1,15 @@
+{
+	"name": "Netflix Animation Component",
+	"type": "netflix-anim",
+	"tagName": "netflix-anim",
+	"version": "1.0.0",
+	"description": "Not intended for GWD, just satisfying rigid API requirements",
+	"files": {
+		"js": []
+	},
+	"externalScripts": [],
+	"attributes": [],
+	"events": [],
+	"methods": [],
+	"nestable": true
+}
