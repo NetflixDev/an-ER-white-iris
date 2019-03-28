@@ -16,11 +16,13 @@ var Creative = function() {
     });
     View.endFrame.iris.tween.start();
 
-    var delay = -1.5 + irisDelay + irisTime;
-    TweenLite.delayedCall(delay, function() {
+    var logoDelay = irisDelay + Creative.irisOffscreenAnimPercent * irisTime;
+    TweenLite.delayedCall(logoDelay, function() {
       View.endFrame.netflixLogo.play();
     });
   };
 };
 
+// percentage of iris animation that has to elapse before content underneath is completely visible
+Creative.irisOffscreenAnimPercent = 0.3;
 Creative.irisColor = 'white';
