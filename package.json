@@ -46,14 +46,15 @@
   "genericSource": {
     "id": "586328cd-b233-4e42-8cfa-2bc84180a86f",
     "compatibility": [
-      "8c417243-849b-4868-8eb9-91063e2f3d80"
+      "8c417243-849b-4868-8eb9-91063e2f3d80",
+      "d0060a26-25ca-433c-b809-c02c32ecf097"
     ],
     "name": "an-ER-white-iris",
     "description": "White iris wipe",
     "type": "animations",
     "context": "Default",
     "state": "published",
-    "updated": 1554313626202,
+    "updated": 1554335727407,
     "full_name": "NetflixDev/an-ER-white-iris",
     "html_url": "https://github.com/NetflixDev/an-ER-white-iris",
     "username": "GitHub",
