@@ -7,7 +7,7 @@ var Creative = function() {
     console.log('Creative.play()');
 
     var irisDelay = 0.5;
-    var irisTime = 2;
+    var irisTime = 3.0;
     var irisLen = Math.max(adParams.adWidth, adParams.adHeight);
     View.endFrame.iris.tween.to(View.endFrame.iris.circle, irisTime, {
       delay: irisDelay,
