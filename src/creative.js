@@ -31,5 +31,5 @@ Creative.irisColor = 'white';
 // how long zoom animates for (in seconds)
 Creative.zoomDuration = 1.7;
 
-// how much to scale the starting frame (in seconds)
-Creative.zoomFactor = 5;
+// how much to scale the keyart intro frame
+Creative.zoomAmount = 5;
