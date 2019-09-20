@@ -7,11 +7,11 @@ var Creative = function() {
     console.log('Creative.play()');
 
     var irisDelay = 0.5;
-    var irisTime = 3.0;
+    var irisTime = 6.0;
     var irisLen = Math.max(adParams.adWidth, adParams.adHeight);
     View.endFrame.iris.tween.to(View.endFrame.iris.circle, irisTime, {
       delay: irisDelay,
-      scale: irisLen * 0.05,
+      scale: irisLen * 0.1,
       ease: Power2.easeOut
     });
     View.endFrame.iris.tween.start();
@@ -24,7 +24,7 @@ var Creative = function() {
 };
 
 // percentage of iris animation that has to elapse before content underneath is completely visible
-Creative.irisOffscreenAnimPercent = 0.3;
+Creative.irisOffscreenAnimPercent = 0.15;
 Creative.usesCanvasIris = true;
 Creative.irisColor = 'white';
 
