@@ -1,3 +1,9 @@
+// how long zoom animates for (in seconds)
+var ZOOM_DURATION = 1.7;
+
+// how much to scale the keyart intro frame
+var ZOOM_AMOUNT = 5;
+
 // time to delay start of iris animation (in seconds)
 var IRIS_DELAY = 0.5;
 
@@ -6,12 +12,6 @@ var IRIS_DURATION = 2;
 
 // color of iris screen
 var IRIS_COLOR = 'white';
-
-// how long zoom animates for (in seconds)
-var ZOOM_DURATION = 1.7;
-
-// how much to scale the keyart intro frame
-var ZOOM_AMOUNT = 5;
 
 /**
  * This animation preset uses ff0000-ad-tech/ad-canvas package to animate canvas-rendered elements
