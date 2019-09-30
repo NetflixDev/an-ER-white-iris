@@ -1,3 +1,18 @@
+// how long zoom animates for (in seconds)
+var ZOOM_DURATION = 1.7;
+
+// how much to scale the keyart intro frame
+var ZOOM_AMOUNT = 5;
+
+// time to delay start of iris animation (in seconds)
+var IRIS_DELAY = 0.5;
+
+// how long iris expansion lasts
+var IRIS_DURATION = 2;
+
+// color of iris screen
+var IRIS_COLOR = 'white';
+
 /**
  * This animation preset uses ff0000-ad-tech/ad-canvas package to animate canvas-rendered elements
  * See here for more details: https://github.com/ff0000-ad-tech/ad-canvas
@@ -8,37 +23,26 @@ var Creative = function() {
   this.play = function() {
     console.log('Creative.play()');
 
-    var irisDelay = Creative.irisDelay;
-    var irisDuration = Creative.irisDuration;
     var irisLen = Math.max(adParams.adWidth, adParams.adHeight);
-    View.endFrame.iris.tween.to(View.endFrame.iris.circle, irisDuration, {
-      delay: irisDelay,
-      scale: irisLen * 0.1,
+    View.endFrame.iris.tween.to(View.endFrame.iris.circle, IRIS_DURATION, {
+      delay: IRIS_DELAY,
+      scale: irisLen * 0.05,
       ease: Power2.easeOut
     });
     View.endFrame.iris.tween.start();
 
-    var logoDelay = irisDelay + irisOffscreenAnimPercent * irisDuration;
+    var logoDelay = IRIS_DELAY + irisOffscreenAnimPercent * IRIS_DURATION;
     TweenLite.delayedCall(logoDelay, function() {
       View.endFrame.netflixLogo.play();
     });
   };
 };
 
-// time to delay start of iris animation (in seconds)
-Creative.irisDelay = 0.5;
-
-// how long iris expansion lasts
-Creative.irisDuration = 6;
-
-// color of iris screen
-Creative.irisColor = 'white';
-
-// how long zoom animates for (in seconds)
-Creative.zoomDuration = 1.7;
-
-// how much to scale the keyart intro frame
-Creative.zoomAmount = 5;
-
 // indicates whether to use canvas-rendered iris
 Creative.usesCanvasIris = true;
+
+// attaching to Creative class since container looks there for intro zoom properties
+Creative.zoomDuration = ZOOM_DURATION;
+Creative.zoomAmount = ZOOM_AMOUNT;
+// also for iris color
+Creative.irisColor = IRIS_COLOR;
